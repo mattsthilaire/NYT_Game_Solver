@@ -1,8 +1,10 @@
 import argparse
 import csv
 
+from typing import List
 
-def find_possible_words(letters, center_letter):
+
+def find_possible_words(letters: List[str], center_letter: str) -> List[str]:
     possible_words = []
 
     with open("all_words.csv", "r") as file:

@@ -10,7 +10,7 @@ def prune_correct_letters(words: set) -> set:
 
     correct_guess = correct_letters.split(",")
     remove_words = set()
-    print(correct_guess)
+
     for letter in correct_guess:
         letter = letter.strip()
         letter, index = letter.split(" ")
